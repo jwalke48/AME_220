@@ -1,0 +1,70 @@
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1, h2 {
+    background: rgb(166, 217, 250);
+	margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+h3 {
+
+    margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+    font-size: 35px;
+
+
+}
+
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: rgb(95, 190, 253);
+	border-radius: 1em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: rgb(0, 119, 255);
+}
+
+#accordion input:checked + label {
+	background: rgb(0, 225, 255);
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: rgb(21, 180, 243);
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #82c3c5;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
