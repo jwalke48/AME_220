@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  </head>
+  <link rel="stylesheet" href="Stylesheet.css">
+  <body>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg" id = "mainImage">
+    <button class = "button", onclick= image1()> 1 </button>
+    <button class = "button", onclick= image2()> 2 </button>
+    <button class = "button", onclick= image3()> 3 </button>
+
+    </body>
+    <script>
+      var leMainImage = document.getElementById("mainImage")
+      var imgs = [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg"
+      ];
+      var imageIndex = 1;
+      
+      function image1(){
+        imageIndex = 0;
+        leMainImage.setAttribute("src",imgs[imageIndex]);
+      }
+
+      function image2(){
+        imageIndex = 1;
+        leMainImage.setAttribute("src",imgs[imageIndex]);
+      }
+      function image3(){
+        imageIndex = 2;
+        leMainImage.setAttribute("src",imgs[imageIndex]);
+      }
+
+      </script>
+</html>
