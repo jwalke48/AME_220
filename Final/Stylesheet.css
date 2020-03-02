@@ -1,0 +1,61 @@
+* {
+	font-family: Arial, sans;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1, h2 {
+    background: rgb(166, 217, 250);
+	margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+h3 {
+
+    margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+    font-size: 35px;
+
+
+}
+
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+.accordion {
+  background-color: lightskyblue;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: lightcoral;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: blanchedalmond;
+  font-size: 15px;
+  display: none;
+  overflow: hidden;
+}
